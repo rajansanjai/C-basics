@@ -1,0 +1,17 @@
+//replace number 0's to 5
+#include<stdio.h>
+int main(){
+	int n,factor=1,ans=0;
+	printf("Enter the n value that should be changed from 0-->5\n");
+	scanf("%d",&n);
+	while(n!=0)
+	{
+		if(n%10==0)
+		ans+=factor*5;
+		else
+		ans+=(n%10 * factor);
+		n=n/10;
+		factor=factor*10;
+	}
+	printf("The replaced value is %d",ans);
+}

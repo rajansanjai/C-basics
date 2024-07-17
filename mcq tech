@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+	int i=1,j=1;
+	for(;j;){
+	j=i++<=2;
+	printf("%d%d ",i,j);
+}
+}
+//op:21 31 40
